@@ -1,6 +1,7 @@
 ## Links úteis
 
 - Documentação da biblioteca [pigpio](https://abyz.me.uk/rpi/pigpio/) para interação com GPIO.
+- Mapa interativo dos [pinos GPIO](https://pinout.xyz/) da RPi.
 - Sintaxe do [Markdown](https://www.markdownguide.org/basic-syntax/).
 
 ## Links sobre o âmbito do projeto
