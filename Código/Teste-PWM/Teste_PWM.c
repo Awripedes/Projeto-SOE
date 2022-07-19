@@ -23,8 +23,6 @@ int main(int argc, char** argv){
     signal(SIGINT, SIGINT_Handler);
 
     gpioSetMode(PINO_PWM, PI_OUTPUT);
-    gpioSetPullUpDown(PINO_BOT, PI_PUD_UP);
-    gpioSetMode(PINO_BOT, PI_INPUT);
 
     int frequencia = 1;
     int dutyCycle = 50;
