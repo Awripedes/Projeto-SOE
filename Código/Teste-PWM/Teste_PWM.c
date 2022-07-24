@@ -6,7 +6,6 @@
 #include <unistd.h>
 
 #define PINO_PWM11 12
-<<<<<<< HEAD
 #define PINO_PWM12 18
 #define PINO_PWM21 13
 #define PINO_PWM22 19
@@ -43,18 +42,6 @@ void SIGINT_Handler(){
     printf("%d: Encerrando\n", getpid());
     sendSpeed(ESQUERDA, PRA_FRENTE, 0);
     sendSpeed(DIREITA, PRA_TRAS, 0);
-=======
-#define PINO_PWM12 13
-#define PINO_PWM21 18
-#define PINO_PWM22 19
-
-void SIGINT_Handler(){
-    printf("%d: Encerrando\n", getpid());
-    gpioHardwarePWM(PINO_PWM11, 0, 0);
-    gpioHardwarePWM(PINO_PWM12, 0, 0);
-    gpioHardwarePWM(PINO_PWM21, 0, 0);
-    gpioHardwarePWM(PINO_PWM22, 0, 0);
->>>>>>> c7b83164b1edde1ddfdc1d6505950abe416bf6c3
     gpioTerminate();
     exit(1);
 }
@@ -67,7 +54,6 @@ int main(int argc, char** argv){
 
     signal(SIGINT, SIGINT_Handler);
 
-<<<<<<< HEAD
     int frequencia = 2000;
     int direcao = 1;
 
@@ -95,27 +81,6 @@ int main(int argc, char** argv){
         }
         sendSpeed(0, 0, 0);
         direcao = -direcao;
-=======
-    gpioSetMode(PINO_PWM11, PI_OUTPUT);
-    gpioSetMode(PINO_PWM12, PI_OUTPUT);
-    gpioSetMode(PINO_PWM21, PI_OUTPUT);
-    gpioSetMode(PINO_PWM22, PI_OUTPUT);
-
-    int frequencia = 10;
-    int dutyCycle = 50;
-
-    while(1){
-        gpioHardwarePWM(PINO_PWM11, frequencia, dutyCycle*10000);
-        gpioHardwarePWM(PINO_PWM12, 0, 0);
-        gpioHardwarePWM(PINO_PWM21, frequencia, dutyCycle*10000);
-        gpioHardwarePWM(PINO_PWM22, 0, 0);
-        sleep(1);
-        gpioHardwarePWM(PINO_PWM11, 0, 0);
-        gpioHardwarePWM(PINO_PWM12, frequencia, dutyCycle*10000);
-        gpioHardwarePWM(PINO_PWM21, 0, 0);
-        gpioHardwarePWM(PINO_PWM22, frequencia, dutyCycle*10000);
-        sleep(1);
->>>>>>> c7b83164b1edde1ddfdc1d6505950abe416bf6c3
     }
 
     return 0;
