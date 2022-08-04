@@ -5,4 +5,4 @@ Projeto da disciplina Sistemas Operacionais Embarcados
 Lukas Araújo (batata-sensual) e Victor Orfeu (Awripedes).
 
 ### Projeto:
-Robo do tipo AMR que segue um operador usando visão computacional.
+Robô do tipo AMR que segue um operador usando visão computacional.
