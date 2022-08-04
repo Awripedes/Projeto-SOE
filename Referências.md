@@ -1,3 +1,8 @@
+## Possíveis soluções para problemas do projeto
+### Detecção de pessoa/operador através de QR Code usado por ela, na roupa, por exemplo
+  - https://learnopencv.com/opencv-qr-code-scanner-c-and-python/
+  - https://learnopencv.com/barcode-and-qr-code-scanner-using-zbar-and-opencv/
+
 ## Links úteis
 
 - Documentação da biblioteca [pigpio](https://abyz.me.uk/rpi/pigpio/) para interação com GPIO.
