@@ -69,17 +69,16 @@ int main(int argc, char** argv){
     while(1){
         for(int i=100; i<255; i++){
             printf("Velocidade atual: %d\n", i);
-            sendSpeed(0, direcao, i);
-            sendSpeed(1, direcao, i);
+            sendSpeed(ESQUERDA, direcao, i);
+            sendSpeed(DIREITA, direcao, i);
             usleep(10000);
         }
         for(int i=255; i>35; i--){
             printf("Velocidade atual: %d\n", i);
-            sendSpeed(0, direcao, i);
-            sendSpeed(1, direcao, i);
+            sendSpeed(ESQUERDA, direcao, i);
+            sendSpeed(DIREITA, direcao, i);
             usleep(10000);
         }
-        sendSpeed(0, 0, 0);
         direcao = -direcao;
     }
 
