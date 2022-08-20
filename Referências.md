@@ -1,6 +1,10 @@
 ## Possíveis soluções para problemas do projeto
+
 ### Detecção de pessoa/operador através de QR Code usado por ela, na roupa, por exemplo
+#### QRCode scanner do OpenCV
   - https://learnopencv.com/opencv-qr-code-scanner-c-and-python/
+  - https://github.com/spmallick/learnopencv/tree/master/QRCode-OpenCV
+#### QRCode scanner do ZBar + OpenCV
   - https://learnopencv.com/barcode-and-qr-code-scanner-using-zbar-and-opencv/
 
 ### Detecção de círculo em python

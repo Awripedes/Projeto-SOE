@@ -135,4 +135,10 @@ int main(int argc, char* argv[])
     }
     else
         cout << "QR Code not detected" << endl;
+    
+    sendSpeed(ESQUERDA, PRA_FRENTE, 0);
+    sendSpeed(DIREITA, PRA_FRENTE, 0);
+    gpioTerminate();
+    
+    return 0;
 }
