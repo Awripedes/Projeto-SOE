@@ -63,14 +63,14 @@ while True:
     if h < (height/2):
         if x != 0:
             if (x + w/2) < (width/3):
-                LeftMotor.moveB()
-                RightMotor.moveF()   
+                LeftMotor.moveF(50)
+                RightMotor.moveF(100)   
             elif(x + w/2) > ((width/3)*2):
-                LeftMotor.moveF()
-                RightMotor.moveB()
+                LeftMotor.moveF(100)
+                RightMotor.moveF(50)
             else:
-                LeftMotor.moveF()
-                RightMotor.moveF()
+                LeftMotor.moveF(50)
+                RightMotor.moveF(50)
     else:
         LeftMotor.stop()
         RightMotor.stop()
